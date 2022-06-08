@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:finalproject_if20b_kelompo2/theme.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SplashPage extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class _SplashPageState extends State<SplashPage> {
     // TODO: implement initState
 
     Timer(
-      Duration(seconds: 3),
+      Duration(seconds: 5),
       () => Navigator.pushNamed(context, '/sign-in'),
     );
 
@@ -26,14 +27,28 @@ class _SplashPageState extends State<SplashPage> {
     return Scaffold(
       backgroundColor: background,
       body: Center(
-        child: Container(
-          width: 292,
-          height: 285,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/Universitas-Amikom-Purwokerto.png"),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              child: Image.asset(
+                "assets/Universitas-Amikom-Purwokerto.png",
+                height: 285,
+                width: 292,
+              ),
             ),
-          ),
+            SizedBox(
+              height: 40,
+            ),
+            Text(
+              "Selamat Datang Di Pusat Pelayanan Mahasiswa",
+              textAlign: TextAlign.center,
+              style: GoogleFonts.poppins(
+                color: white,
+                fontSize: 20,
+              ),
+            ),
+          ],
         ),
       ),
     );

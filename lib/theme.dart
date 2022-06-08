@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+double defaultMargin = 30.0;
+
 Color background = Color(0xff6B46C2);
 Color icon = Color(0xffA22BC6);
 Color text2 = Color(0xff999999);
