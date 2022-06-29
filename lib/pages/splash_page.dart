@@ -16,7 +16,7 @@ class _SplashPageState extends State<SplashPage> {
 
     Timer(
       Duration(seconds: 5),
-      () => Navigator.pushNamed(context, '/sign-in'),
+          () => Navigator.pushNamed(context, '/sign-in'),
     );
 
     super.initState();
