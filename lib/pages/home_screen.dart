@@ -1,8 +1,21 @@
+import 'package:finalproject_if20b_kelompo2/pages/Agenda.dart';
+import 'package:finalproject_if20b_kelompo2/pages/Berita_Kampus.dart';
+import 'package:finalproject_if20b_kelompo2/pages/Bikam.dart';
+import 'package:finalproject_if20b_kelompo2/pages/Keuangan.dart';
+import 'package:finalproject_if20b_kelompo2/pages/Kontrak.dart';
+import 'package:finalproject_if20b_kelompo2/pages/Pengajuan.dart';
+import 'package:finalproject_if20b_kelompo2/pages/Presensi.dart';
+import 'package:finalproject_if20b_kelompo2/pages/Rna.dart';
+import 'package:finalproject_if20b_kelompo2/pages/Rps.dart';
+import 'package:finalproject_if20b_kelompo2/pages/Seminar.dart';
+import 'package:finalproject_if20b_kelompo2/pages/Transkip_Nilai.dart';
+import 'package:finalproject_if20b_kelompo2/pages/Ujian_Semester.dart';
 import 'package:finalproject_if20b_kelompo2/pages/profile.dart';
 import 'package:finalproject_if20b_kelompo2/pages/sign_in_pages_.dart';
 import 'package:flutter/material.dart';
 import 'package:finalproject_if20b_kelompo2/theme.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:finalproject_if20b_kelompo2/pages/khs_pages.dart';
 
 class home_page extends StatelessWidget {
   @override
@@ -105,7 +118,13 @@ class home_page extends StatelessWidget {
                     width: 40,
                     height: 40,
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => khsPage(),
+                          ),
+                        );
+                      },
                       icon: Image.asset("assets/khs.png"),
                     ),
                   ),
@@ -137,7 +156,13 @@ class home_page extends StatelessWidget {
                     width: 40,
                     height: 40,
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => TranskipNilaiPage(),
+                          ),
+                        );
+                      },
                       icon: Image.asset("assets/transkip nilai.png"),
                     ),
                   ),
@@ -169,7 +194,13 @@ class home_page extends StatelessWidget {
                     width: 40,
                     height: 40,
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => PengajuanPage(),
+                          ),
+                        );
+                      },
                       icon: Image.asset("assets/pengajuan.png"),
                     ),
                   ),
@@ -201,7 +232,13 @@ class home_page extends StatelessWidget {
                     width: 40,
                     height: 40,
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => UjianSemesterPage(),
+                          ),
+                        );
+                      },
                       icon: Image.asset("assets/jadwal.png"),
                     ),
                   ),
@@ -234,7 +271,13 @@ class home_page extends StatelessWidget {
                     width: 40,
                     height: 40,
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => AgendaPage(),
+                          ),
+                        );
+                      },
                       icon: Image.asset("assets/jadwal.png"),
                     ),
                   ),
@@ -266,7 +309,13 @@ class home_page extends StatelessWidget {
                     width: 40,
                     height: 40,
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => SeminarPage(),
+                          ),
+                        );
+                      },
                       icon: Image.asset("assets/jadwal.png"),
                     ),
                   ),
@@ -298,7 +347,13 @@ class home_page extends StatelessWidget {
                     width: 40,
                     height: 40,
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => PresensiPage(),
+                          ),
+                        );
+                      },
                       icon: Image.asset("assets/presensi.png"),
                     ),
                   ),
@@ -330,7 +385,13 @@ class home_page extends StatelessWidget {
                     width: 40,
                     height: 40,
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => BikamPage(),
+                          ),
+                        );
+                      },
                       icon: Image.asset("assets/jadwal.png"),
                     ),
                   ),
@@ -363,7 +424,13 @@ class home_page extends StatelessWidget {
                     width: 40,
                     height: 40,
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => RpsPage(),
+                          ),
+                        );
+                      },
                       icon: Image.asset("assets/rps.png"),
                     ),
                   ),
@@ -395,7 +462,13 @@ class home_page extends StatelessWidget {
                     width: 40,
                     height: 40,
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => KeuanganPage(),
+                          ),
+                        );
+                      },
                       icon: Image.asset("assets/keuangan.png"),
                     ),
                   ),
@@ -427,7 +500,13 @@ class home_page extends StatelessWidget {
                     width: 40,
                     height: 40,
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => RnaPage(),
+                          ),
+                        );
+                      },
                       icon: Image.asset("assets/rna.png"),
                     ),
                   ),
@@ -459,7 +538,13 @@ class home_page extends StatelessWidget {
                     width: 40,
                     height: 40,
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => KontrakPage(),
+                          ),
+                        );
+                      },
                       icon: Image.asset("assets/kontrak.png"),
                     ),
                   ),
@@ -506,7 +591,13 @@ class home_page extends StatelessWidget {
                 ),
                 child: TextButton(
                   style: TextButton.styleFrom(backgroundColor: white),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => BeritakampusPage(),
+                      ),
+                    );
+                  },
                   child: Text(
                     "Lihat Semua",
                     style: GoogleFonts.poppins(

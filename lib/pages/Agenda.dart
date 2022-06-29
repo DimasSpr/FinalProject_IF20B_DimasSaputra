@@ -1,4 +1,3 @@
-
 import 'package:finalproject_if20b_kelompo2/pages/profile.dart';
 import 'package:finalproject_if20b_kelompo2/pages/sign_in_pages_.dart';
 import 'package:flutter/material.dart';
@@ -6,8 +5,8 @@ import 'package:finalproject_if20b_kelompo2/theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:finalproject_if20b_kelompo2/pages/home_screen.dart';
 
-class khsPage extends StatelessWidget {
-  static const routeName = 'khs_page';
+class AgendaPage extends StatelessWidget {
+  static const routeName = 'Agenda';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,7 +49,7 @@ class khsPage extends StatelessWidget {
                     top: 40,
                   ),
                   child: Text(
-                    'Kartu Hasil Studi',
+                    'Agenda',
                     style: GoogleFonts.poppins(
                       fontSize: 15,
                       fontWeight: semibold,

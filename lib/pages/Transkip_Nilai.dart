@@ -1,4 +1,3 @@
-
 import 'package:finalproject_if20b_kelompo2/pages/profile.dart';
 import 'package:finalproject_if20b_kelompo2/pages/sign_in_pages_.dart';
 import 'package:flutter/material.dart';
@@ -6,8 +5,8 @@ import 'package:finalproject_if20b_kelompo2/theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:finalproject_if20b_kelompo2/pages/home_screen.dart';
 
-class khsPage extends StatelessWidget {
-  static const routeName = 'khs_page';
+class TranskipNilaiPage extends StatelessWidget {
+  static const routeName = 'transkip_nilai';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,14 +16,7 @@ class khsPage extends StatelessWidget {
       body: Container(
         height: 177,
         width: 400,
-        decoration: BoxDecoration(
-          color: Color(0xff6B46C2),
-          borderRadius: BorderRadius.vertical(
-            bottom: Radius.circular(
-              10,
-            ),
-          ),
-        ),
+        color: Color(0xff6B46C2),
         child: Column(
           children: [
             Row(
@@ -50,7 +42,7 @@ class khsPage extends StatelessWidget {
                     top: 40,
                   ),
                   child: Text(
-                    'Kartu Hasil Studi',
+                    'Transkip Nilai',
                     style: GoogleFonts.poppins(
                       fontSize: 15,
                       fontWeight: semibold,
